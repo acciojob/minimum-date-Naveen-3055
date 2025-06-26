@@ -1,5 +1,22 @@
 function minDate(dates) {
   //write you code here
+	if(dates.length===0){
+		return null;
+	}
+	let min = new Date(dates[0]);
+	for(let i=1;i<dates.length;i++){
+		const date = new Date(dates[i]);
+		if(date<min){
+			min= date;
+		}
+	}
+
+	let year = min.getFullYear();
+	const mm = String(min.getMonth()+1).PadStart(2,'0');
+	const dd = String(min.getDate()).PadStart(2,'0');
+
+	return `${year}/${mm}/{dd}`;
+	 
 }
 
 // Do not change the code
