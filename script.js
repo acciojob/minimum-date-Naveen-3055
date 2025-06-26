@@ -15,7 +15,7 @@ function minDate(dates) {
 	const mm = String(min.getMonth()+1).PadStart(2,'0');
 	const dd = String(min.getDate()).PadStart(2,'0');
 
-	return `${year}/${mm}/{dd}`;
+	return `${year}/${mm}/${dd}`;
 	 
 }
 
