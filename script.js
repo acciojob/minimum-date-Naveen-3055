@@ -12,8 +12,8 @@ function minDate(dates) {
 	}
 
 	const year = min.getFullYear();
-	const mm = String(min.getMonth()+1).PadStart(2,'0');
-	const dd = String(min.getDate()).PadStart(2,'0');
+	const mm = String(min.getMonth()+1).padStart(2,'0');
+	const dd = String(min.getDate()).padStart(2,'0');
 
 	return `${year}/${mm}/${dd}`;
 	 
